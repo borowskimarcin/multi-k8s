@@ -1,6 +1,6 @@
-docker build -t marbor1/multi-client:latest marbor1/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t marbor1/multi-server:latest marbor1/multi-server:$SHA -f ./server/Dockerfile ./server
-docker build -t marbor1/multi-worker:latest marbor1/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+docker build -t marbor1/multi-client:latest -t marbor1/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t marbor1/multi-server:latest -t marbor1/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t marbor1/multi-worker:latest -t marbor1/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 docker push marbor1/multi-client:latest
 docker push marbor1/multi-server:latest
 docker push marbor1/multi-worker:latest
